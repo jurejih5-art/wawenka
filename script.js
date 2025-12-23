@@ -1,14 +1,31 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+// Mobile menu
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
 });
 
+// Contact form message
+const form = document.getElementById("contact-form");
+const msg = document.getElementById("form-msg");
 
- // function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  msg.textContent = "Thank you! We will contact you soon.";
+  msg.style.color = "#23d387";
+  form.reset();
+});
+
+// Scroll animation for services
+const cards = document.querySelectorAll(".service-card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+cards.forEach(card => observer.observe(card));

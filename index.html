@@ -1,85 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maandeeq Tourism</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>maandeeq.gov</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1 class="logo">MAANDEEQ</h1>
-            <button id="menu-btn">☰</button>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Destinations</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>MANDEEQ TOURSIM <br> Discover Your Next Adventure</h2>
-            <p>Explore Breathtaking Destinations With Our Guided Tours And Services.</p>
-            <a href="#services" class="btn">Explore Now</a>
-        </div>
-    </section>
+<header>
+  <div class="logo">MAANDEEQ</div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="menu-btn">☰</button>
+  </nav>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a dedicated tourism service helping travelers explore the world's most amazing destinations. Our team ensures unforgettable experiences tailored to your preferences.</p>
-            <p>From serene beaches to majestic mountains, we provide complete travel planning, accommodation, and guided tours to make your journey seamless and memorable.</p>
-        </div>
-    </section>
+<section id="home" class="hero">
+  <h1>Maandeeq Construction & Logistics Solutions</h1>
+  <p>Building strong structures. Delivering on time.</p>
+  <a href="#contact" class="btn">Get a Quote</a>
+</section>
 
-    <!-- Services/Destinations Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Popular Destinations</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/beach.jpg" alt="Beach">
-                    <h3>Sunny Beaches</h3>
-                    <p>Relax on pristine beaches and enjoy crystal-clear waters.</p>
-                </div>
-                <div class="card">
-                    <img src="images/mountain.jpg" alt="Mountains">
-                    <h3>Majestic Mountains</h3>
-                    <p>Explore breathtaking mountain ranges and scenic trails.</p>
-                </div>
-                <div class="card">
-                    <img src="images/cities.jpg" alt="City">
-                    <h3>Vibrant Cities</h3>
-                    <p>Discover lively cities full of culture, food, and nightlife.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="services">
+  <h2>Our Services</h2>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Follow Us On Social Media</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <p>&copy; 2025 Maandeeq. All rights reserved.</p>
-        </div>
-    </footer>
+  <div class="services-grid">
 
-    <script src="script.js"></script>
+    <div class="service-card">
+      <img src="images/construction.jpg">
+      <h3>Building Construction</h3>
+      <p>Residential, commercial, and industrial construction services.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/logistics.jpg">
+      <h3>Logistics & Transportation</h3>
+      <p>Safe and reliable transportation of goods and materials.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/road.jpg">
+      <h3>Road & Infrastructure</h3>
+      <p>Road construction, drainage systems, and civil works.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/equipment.jpg">
+      <h3>Equipment Supply</h3>
+      <p>Supply of heavy-duty construction equipment and machinery.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/Warehouse.jpg">
+      <h3>Warehousing</h3>
+      <p>Secure storage and inventory management solutions.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/project.jpg">
+      <h3>Project Management</h3>
+      <p>Planning, supervision, and on-time project delivery.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    We are a professional construction and logistics company dedicated to
+    delivering high-quality projects and reliable transportation services.
+    Our experienced team ensures safety, efficiency, and customer satisfaction
+    from start to finish.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="form-msg"></p>
+</section>
+
+<footer>
+  <div class="social-icons">
+    <p>Follow Us On Social Media</p>
+    <a href="https://www.facebook.com/share/1Fob4HYyme/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/+252616403366" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://x.com/hudaifahus68124?s=11" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/junaid.1n?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p>© 2025 Maandeeq Construction & Logistics</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
